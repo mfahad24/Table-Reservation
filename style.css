@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "CONSOLA";
+  src: url("fonts/CONSOLA.ttf");
+}
+
+body {
+  background-color: #ddd4c3;
+  font-family: Roboto;
+}
+
+h2 {
+  font-family: CONSOLA;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
+  color: #DC143C;
+}
+
+.tableclass {
+  border: 1px solid grey;
+  border-radius: 50%;
+  height: 65px;
+  width: 65px;
+  text-align: center;
+  line-height: 4;
+  margin: 20px;
+  background-color: #f0edf2;
+  border-style: none;
+  font-family: CONSOLA;
+}
+
+#tablediv {
+  border: 1px solid black;
+  height: 320x;
+  width: 330px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  background-color: white;
+  border-style: none;
+}
+
+#title {
+  text-align: center;
+  margin-bottom: 60px;
+}
