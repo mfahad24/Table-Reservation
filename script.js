@@ -7,22 +7,17 @@ $(document).ready(function() { //anonymous function is a no name function withou
     $(event.target).removeClass("available");
   });
 
-  $(".btn").click(function() {
-    $("#inputdiv").css("display", "none");
-    $(event.target).removeClass("available").addClass("reserved");
-    });
-  });
-
   $(".xout").click(function() {
     $("#inputdiv").css("display", "none");
   });
+  //unable to find code to revert reserved to available after entering
+  //the input field div and X'ing out
 
-  // $(".btn").click(function() {
-  //   $("#inputdiv").css("display", "none");
-  //   $(event.target).removeClass("available");
-  // });
+  $(".btn").click(function(event) {
+    event.preventDefault();
+    $("#inputdiv").css("display", "none");
+  });
+
+
 
 });
-
-//set it up
-//do it to all of them
