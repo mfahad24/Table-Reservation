@@ -29,7 +29,7 @@ $(document).ready(function() {
   function hoverData () {
     var name = $("#name").val();
     var guestSize = $("#guests").val();
-    tableDiv.append('<div id="hoverdiv" class="hover"><div>Name: ' + name + '</div><div>Guests: ' + guestSize + '</div></div>');
+    tableDiv.append('<div id="hoverdiv">Name: ' + name + ' Guests: ' + guestSize + '</div>');
   }
 
 });

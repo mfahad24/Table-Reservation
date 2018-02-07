@@ -142,29 +142,30 @@ div.available:hover {
   position: absolute;
 } */
 
-#hoverdiv {
+.hover {
   font-size: 10px;
   display: none;
   width: 100px;
   height: 25px;
   background-color: darkgrey;
+  z-index: 2;
 }
 
-.hover:hover #hover { //show the hover selector data only to a class that has hover over it
+
+#hoverdiv {
+  height: 120px;
+  width: 120px;
+  border: 1px solid black;
+  display: none;
+}
+
+.reserved:hover #hoverdiv {
   display: block;
     border: 1px solid black;
 }
-
-/* .hover:hover { //show the hover selector data only to a class that has hover over it
-  display: block;
-    border: 1px solid black;
-} */
 
 @media (max-width: 768px) {
   #inputdiv, #tablediv {
     flex-direction: column;
   }
-
-
-
 };
