@@ -29,6 +29,7 @@ h1 {
   background-color: #ADAAAA;
   border-style: none;
   font-family: CONSOLA;
+  z-index: 0;
 }
 
 .available {
@@ -42,6 +43,7 @@ h1 {
   background-color: #EEE;
   border-style: none;
   font-family: CONSOLA;
+  z-index: 1;
 }
 
 #tablediv {
@@ -76,7 +78,7 @@ h1 {
   background-color: white;
   border-style: none;
   position: absolute;
-  z-index: 1;
+  z-index: 0;
   top: 180px;
   left: 460px;
   box-shadow: 0px 0px 31px 1px rgba(0, 0, 0, 0.3);
@@ -120,6 +122,7 @@ h1 {
   justify-content: flex-end;
   color: grey;
   margin: 15px;
+  cursor: pointer;
 }
 
 h4 {
@@ -138,30 +141,31 @@ div.available:hover {
   border: 1px solid #ADAAAA;
 }
 
-/* #hover1:hover {
-  position: absolute;
-} */
-
-.hover {
-  font-size: 10px;
-  display: none;
-  width: 100px;
-  height: 25px;
-  background-color: darkgrey;
-  z-index: 2;
-}
-
-
 #hoverdiv {
-  height: 120px;
-  width: 120px;
+  height: 75px;
+  width: 75px;
   border: 1px solid black;
   display: none;
+  background-color: darkgrey;
+  z-index: 2;
+  text-align: justify;
 }
 
 .reserved:hover #hoverdiv {
-  display: block;
-    border: 1px solid black;
+  position: absolute;
+  top: 50px;
+  left: 120px;
+  bottom: 20px;
+  display: inline;
+  width: 75px;
+  height: 40px;
+  border-radius: 10px;
+  text-align: center;
+    z-index: 2;
+}
+
+.table {
+  z-index: 0;
 }
 
 @media (max-width: 768px) {
